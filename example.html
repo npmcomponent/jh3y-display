@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>display</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="build/build.css">
+	<script src="build/build.js"></script>
+</head>
+<body>
+	<div class="page-content">
+		<h4>display demo</h4>
+
+		<div class="content">
+			<p>Here is a display.</p>
+			<div id="display">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var display = require('display');
+		var element = document.querySelector('#display');
+		var myDisplay = new display(element)
+	</script>
+</body>
+</html>

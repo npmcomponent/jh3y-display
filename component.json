@@ -1,0 +1,17 @@
+{
+  "name": "display",
+  "repo": "jheytompkins/display",
+  "description": "An animated display reel for displaying information such as forms, pictures, media etc.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "display.css"
+  ]
+}
