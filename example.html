@@ -13,18 +13,34 @@
 		<div class="content">
 			<p>Here is a display.</p>
 			<div id="display">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+				<div>
+					<div>A</div>
+				</div>
+				<div>
+					<div>B</div>
+				</div>
+				<div>
+					<div>C</div>
+				</div>
+				<div>
+					<div>D</div>
+				</div>
 			</div>
+			<button class="next">next.</button>
+			<button class="previous">previous.</button>
 		</div>
 	</div>
 
 	<script>
 		var display = require('display');
 		var element = document.querySelector('#display');
-		var myDisplay = new display(element)
+		var myDisplay = new display(element);
+		document.querySelector('.next').addEventListener('click', function () {
+			myDisplay.next();
+		});
+		document.querySelector('.previous').addEventListener('click', function () {
+			myDisplay.previous();
+		});
 	</script>
 </body>
 </html>

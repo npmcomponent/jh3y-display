@@ -4,7 +4,8 @@
   "description": "An animated display reel for displaying information such as forms, pictures, media etc.",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
@@ -12,6 +13,6 @@
     "index.js"
   ],
   "styles": [
-    "display.css"
-  ]
+  ],
+  "remotes": []
 }
