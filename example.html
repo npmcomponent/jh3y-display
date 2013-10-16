@@ -13,7 +13,31 @@
 
 		<div class="content">
 			<p>Here is a display.</p>
-			<div id="display">
+			<div id="display" class="basic-side-to-side">
+				<div>
+					<h4>display.</h4>
+					<div>I am a display component. You can use me to display whatever you want. Use my API to go forwards and backwards using .next() and .previous() or you can just click the buttons below.</div>
+				</div>
+				<div>
+					<h4>I've got a form field</h4>
+					<div>Why not use me to display a form to a user?</div>
+					<label>your name.</label>
+					<input type="text"></input>
+				</div>
+				<div>
+					<h4>well now i've got an image.</h4>
+					<div>Now I've got an image. You could use me for a slideshow if you wanted.</div>
+					<img src="http://cdn.morguefile.com/imageData/public/files/p/pippalou/08/l/1375557203yvavx.jpg"></img>
+				</div>
+				<div>
+					<h4>so that's me.</h4>
+					<div>Use me in your project or contribute new ideas at <a href="https://github.com/jheytompkins/display">my page</a>.</div>
+				</div>
+			</div>
+			<button class="next">next.</button>
+			<button class="previous">previous.</button>
+			<p>Here is a second display this one uses a different theme that was created for a display with the class -basic-top-to-bottom</p>
+			<div id="secondDisplay">
 				<div>
 					<h4>display.</h4>
 					<div>I am a display component. You can use me to display whatever you want. Use my API to go forwards and backwards using .next() and .previous() or you can just click the buttons below.</div>
@@ -43,6 +67,8 @@
 		var display = require('display');
 		var element = document.querySelector('#display');
 		var myDisplay = new display(element);
+		var secondElement  = document.querySelector('#secondDisplay');
+		var mySecondDisplay = new display(secondElement);
 		document.querySelector('.next').addEventListener('click', function () {
 			myDisplay.next();
 		});
