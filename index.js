@@ -1,8 +1,7 @@
 module.exports = display;
-function display(element, options) {
+function display(element) {
 	if (!(this instanceof display)) return new display(element, options);
-	var d = this;
-	d.element = element;
+	this.element = element;
 	this._create();
 }
 display.prototype._configurePanels = function () {
@@ -26,10 +25,7 @@ display.prototype._create = function () {
 	display.element.className = display.element.className + ' display';
 	[].forEach.call(panels, function (panel, index) {
 		if (panel.tagName.toLowerCase() === 'div') {
-			//can definitely do this in a ternary.
-			if (index === 0) {
-				panel.className = panel.className + ' current';
-			}
+			panel.className = (index === 0) ? panel.className + ' current': panel.className;
 			panel.className = panel.className + ' display-panel';
 		}
 	});
