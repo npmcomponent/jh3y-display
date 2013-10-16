@@ -1,0 +1,13 @@
+body{
+    font-family: tahoma;
+}
+img {
+    width: 125px;
+    margin: 0 0 0 125px;
+}
+.display-panel {
+    background: rgba(255, 0, 0, 0.2);
+}
+.display-panel.current {
+    background: rgba(0, 255, 0, 0.2);
+}
