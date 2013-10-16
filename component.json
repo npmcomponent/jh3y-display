@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "jheytompkins/display-basic-side-to-side.theme": "*"
+    "jheytompkins/display-basic-side-to-side.theme": "*",
+    "jheytompkins/display-basic-top-to-bottom.theme": "*"
   },
   "development": {},
   "license": "MIT",

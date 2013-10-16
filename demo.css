@@ -11,3 +11,7 @@ img {
 .display-panel.current {
     background: rgba(0, 255, 0, 0.2);
 }
+.display.basic-top-to-bottom{
+	margin: 100px auto;
+	font-size: 10px;
+}
