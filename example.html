@@ -72,8 +72,12 @@
 	<script>
 		var display = require('display');
 		var element = document.querySelector('#display');
+		element.style.height = '200px';
+		element.style.width = '400px';
 		var myDisplay = new display(element);
 		var secondElement  = document.querySelector('#secondDisplay');
+		secondElement.style.height = '200px';
+		secondElement.style.width = '400px';
 		var mySecondDisplay = new display(secondElement);
 		document.querySelector('.next').addEventListener('click', function () {
 			myDisplay.next();
