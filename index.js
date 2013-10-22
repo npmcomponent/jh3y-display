@@ -3,7 +3,9 @@ function display(element) {
 	if (!(this instanceof display)) return new display(element);
 	this.element = element;
 	this._create();
+	for (var ext in this._extensions) {this._extensions[ext](this);}
 }
+display.prototype._extensions = {}
 display.prototype._configurePanels = function () {
 	var display = this,
 		count,
