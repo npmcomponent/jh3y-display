@@ -1,6 +1,6 @@
 module.exports = display;
 function display(element) {
-	if (!(this instanceof display)) return new display(element, options);
+	if (!(this instanceof display)) return new display(element);
 	this.element = element;
 	this._create();
 }
@@ -23,15 +23,15 @@ display.prototype._create = function () {
 	var display = this,
 		panels = display.element.children;
 	display.element.className = display.element.className + ' display';
+	display.element.setAttribute('data-display', true);
 	[].forEach.call(panels, function (panel, index) {
 		if (panel.tagName.toLowerCase() === 'div') {
-			panel.className = (index === 0) ? panel.className + ' current': panel.className;
-			panel.className = panel.className + ' display-panel';
+			panel.className = (index === 0) ? panel.className + ' current display-panel': panel.className + ' display-panel';
 		}
 	});
 	display._configurePanels();
 }
-display.prototype._move = function (direction) {
+display.prototype._move = function (direction, element) {
 	direction = (direction !== undefined) ? direction : 'next';
 	if (direction === 'previous' || direction === 'next') {
 		var prop = (direction === 'previous') ? 'previousElementSibling' : 'nextElementSibling',
