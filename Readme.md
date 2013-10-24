@@ -51,6 +51,10 @@ There are also extensions available for display. They all have demos and instruc
 * [swipe-navigation](https://github.com/jheytompkins/display-add-swipe-navigation.extension): provides horizontal swipe navigation on touch devices such as mobile.
 * [scroll-navigation](https://github.com/jheytompkins/display-add-scroll-navigation.extension): provides vertical scroll navigation on touch devices such as mobile.
 
+##Example Usage
+
+* [form](http://jsfiddle.net/bMEZR/): An example of a form being presented with display.
+
 ##Contributing
 
 Please do!
