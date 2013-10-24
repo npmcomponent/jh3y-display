@@ -4,7 +4,7 @@
   
 ## Demo
 
-You can see a demo of display [here](http://jsfiddle.net/LJfkS/2/). It's using a basic [side to side theme]() and a [swipe navigation extension]().
+You can see a demo of display [here](http://jsfiddle.net/Wvt4z/1/). It's using a basic [side to side theme](https://github.com/jheytompkins/display-side-slide.theme) and a [swipe navigation extension](https://github.com/jheytompkins/display-add-swipe-navigation.extension).
 
 ## Installation (when using [component](http://component.io))
 
@@ -14,7 +14,7 @@ You can see a demo of display [here](http://jsfiddle.net/LJfkS/2/). It's using a
 
 ## Usage
 
-You can use display with the [component package manager]() or standalone by simply adding [display.js]() to your project.
+You can use display with the [component package manager](http://component.io) or standalone by simply adding [display.js]() to your project.
 
 	var display = require('display'); //THIS IS ONLY NEEDED IF USING THE NON STANDALONE VERSION
 	var element = document.querySelector('someElement')
@@ -34,19 +34,22 @@ Moves the display to the previous panel of content.
 
 ##Themes
 
-There are some themes available already for display. They all have demos and instructions. Using themes is easy. You simply add the theme class to your display and include the theme CSS in your project. You can see this in the demo, that `side-slide` is added to display and the relevant CSS has been included.
+There are some themes available already for display. They all have demos and instructions. Using themes is easy. You simply add the theme class to your display and include the theme CSS in your project. You can see this in the [demo](http://jsfiddle.net/Wvt4z/1/), that `side-slide` is added to display and the relevant CSS has been included.
 
-* [side-slide](https://github.com/jheytompkins/display-side-slide.theme): A side sliding theme.
-* [top-slide](https://github.com/jheytompkins/display-top-slide.theme): A top sliding theme.
-* [carousel](https://github.com/jheytompkins/display-carousel.theme): A carousel theme.
-* [vertical-carousel](https://github.com/jheytompkins/vertical-carousel.theme): A vertical version of the carousel theme.
-* [scaled-gallery](https://github.com/jheytompkins/display-scaled-gallery.theme): A scaling gallery style theme.
-* [scaled-gallery-less](https://github.com/jheytompkins/display-scaled-gallery-less.theme): A reduced version of the scaling gallery style theme.
-* [bridge](https://github.com/jheytompkins/display-bridge.theme): A rotating style theme that looks like a bridge.
+* [side-slide](https://github.com/jheytompkins/display-side-slide.theme): side sliding theme.
+* [top-slide](https://github.com/jheytompkins/display-top-slide.theme): top sliding theme.
+* [carousel](https://github.com/jheytompkins/display-carousel.theme): carousel theme.
+* [vertical-carousel](https://github.com/jheytompkins/vertical-carousel.theme): vertical version of the carousel theme.
+* [scaled-gallery](https://github.com/jheytompkins/display-scaled-gallery.theme): scaling gallery style theme.
+* [scaled-gallery-less](https://github.com/jheytompkins/display-scaled-gallery-less.theme): reduced version of the scaling gallery style theme.
+* [bridge](https://github.com/jheytompkins/display-bridge.theme): rotating style theme that looks like a bridge.
 
 ##Extensions
 
 There are also extensions available for display. They all have demos and instructions. To use an extension you simply include the extension file after including display.
+
+* [swipe-navigation](https://github.com/jheytompkins/display-add-swipe-navigation.extension): provides horizontal swipe navigation on touch devices such as mobile.
+* [scroll-navigation](https://github.com/jheytompkins/display-add-scroll-navigation.extension): provides vertical scroll navigation on touch devices such as mobile.
 
 ##Contributing
 

@@ -12,84 +12,51 @@
 		<h4>display demo</h4>
 
 		<div class="content">
-			<p>Here is a display. We add themes to the display by giving it the class name of our theme.</p>
-			<div id="display" class="basic-side-to-side">
-				<div>
-					<h4>display.</h4>
-					<div>I am a display component. You can use me to display whatever you want. Use my API to go forwards and backwards using .next() and .previous() or you can just click the buttons below.</div>
-				</div>
-				<div>
-					<h4>I've got a form field</h4>
-					<div>Why not use me to display a form to a user?</div>
-					<label>your name.</label>
-					<input type="text"></input>
-				</div>
-				<div>
-					<h4>well now i've got an image.</h4>
-					<div>Now I've got an image. You could use me for a slideshow if you wanted.</div>
-					<img src="http://cdn.morguefile.com/imageData/public/files/p/pippalou/08/l/1375557203yvavx.jpg"></img>
-				</div>
-				<div>
-					<h4>so that's me.</h4>
-					<div>Use me in your project or contribute new ideas at <a href="https://github.com/jheytompkins/display">my page</a>.</div>
+			<div class="wrap">
+				<div id="display" class="display side-slide">
+					<div>
+						<h4>hi there!</h4>
+
+						<p>I'm a display and you can use me to display content in your project. Anything from images, to forms or any other sort of media you can think of.</p>
+					</div>
+					<div>
+						<h4>I've got a form field</h4>
+
+						<div>Why not use me to display a form to a user?</div>
+						<label>your name.</label>
+						<input type="text"></input>
+					</div>
+					<div>
+						<h4>well now i've got an image.</h4>
+
+						<div>Now I've got an image. You could use me for a slideshow if you wanted.</div>
+						<img src="http://cdn.morguefile.com/imageData/public/files/p/pippalou/08/l/1375557203yvavx.jpg"></img>
+					</div>
+					<div>
+						<h4>why not show a video</h4>
+						<iframe width="210" height="158" src="//www.youtube.com/embed/Pybpb089oDY" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div>
+						<h4>so that's me.</h4>
+						<p>so now you have an idea of what I can do so why not give me a try or contribute at my page. <a href="https://github.com/jheytompkins/display">github.com/jheytompkins/display</a></p>
+					</div>
 				</div>
 			</div>
 			<button class="next">next.</button>
 			<button class="previous">previous.</button>
-			<p>Here is a second display. This one uses a different theme that was created for a display with the class 'basic-top-to-bottom'</p>
-			<div id="secondDisplay" class="basic-top-to-bottom">
-				<div>
-					<h4>display.</h4>
-					<div>I am a display component. I'm using the 'basic-top-to-bottom' theme that can be seen at <a href="https://github.com/jheytompkins/display-basic-top-to-bottom.theme">https://github.com/jheytompkins/display-basic-top-to-bottom.theme</a></div>
-					<h4>How to create a display</h4>
-					<p>Firstly, you need to work out what you want to display and how. This could be anything from pictures to information, even media.</p>
-					<p>Put your content into the correct stucture, basically divs with a container div.</p>
-				</div>
-				<div>
-					<h4>Now theme it</h4>
-					<p>Now you've got the content, you need to decide on how you're going to transition through it and how it should look.</p>
-					<p>You can see two example themes at :
-						<ul>
-							<li><a href="https://github.com/jheytompkins/display-basic-top-to-bottom.theme">https://github.com/jheytompkins/display-basic-top-to-bottom.theme</a></li>
-							<li><a href="https://github.com/jheytompkins/display-basic-side-to-side.theme">https://github.com/jheytompkins/display-basic-side-to-side.theme</a></li>
-						</ul>
-					</p>
-				</div>
-				<div>
-					<h4>those two example themes</h4>
-					<p>These are themes based on 200px by 400px content. You can define whatever sizes you wish but I found this easier for those particular themes and with calculating the translate properties. Using a css preprocessor like less makes things a lot easier in this area because if I wanted to make a theme for a larger display, less can calculate the new translate properties from the new height and width I give it which saves me hassle when it comes to more complex themes.</p>
-				</div>
-				<div>
-					<h4>so that's me.</h4>
-					<div>Use me in your project or contribute new ideas at <a href="https://github.com/jheytompkins/display">my page</a>.</div>
-				</div>
-			</div>
-			<button class="nextSecond">next.</button>
-			<button class="previousSecond">previous.</button>
 		</div>
 	</div>
-
 	<script>
 		var display = require('display');
 		var element = document.querySelector('#display');
 		element.style.height = '200px';
 		element.style.width = '400px';
 		var myDisplay = new display(element);
-		var secondElement  = document.querySelector('#secondDisplay');
-		secondElement.style.height = '200px';
-		secondElement.style.width = '400px';
-		var mySecondDisplay = new display(secondElement);
 		document.querySelector('.next').addEventListener('click', function () {
 			myDisplay.next();
 		});
 		document.querySelector('.previous').addEventListener('click', function () {
 			myDisplay.previous();
-		});
-		document.querySelector('.nextSecond').addEventListener('click', function () {
-			mySecondDisplay.next();
-		});
-		document.querySelector('.previousSecond').addEventListener('click', function () {
-			mySecondDisplay.previous();
 		});
 	</script>
 </body>
