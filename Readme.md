@@ -14,7 +14,7 @@ You can see a demo of display [here](http://jsfiddle.net/Wvt4z/1/). It's using a
 
 ## Usage
 
-You can use display with the [component package manager](http://component.io) or standalone by simply adding [display.js]() to your project.
+You can use display with the [component package manager](http://component.io) or standalone by simply adding [display.js](https://github.com/jheytompkins/display/blob/master/display.js) to your project.
 
 	var display = require('display'); //THIS IS ONLY NEEDED IF USING THE NON STANDALONE VERSION
 	var element = document.querySelector('someElement')
