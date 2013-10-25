@@ -20,6 +20,13 @@ You can use display with the [component package manager](http://component.io) or
 	var element = document.querySelector('someElement')
 	var myDisplay = new display(element);
 
+To use display, you need to provide the following structure
+	
+	div //becomes the display, this is the element you pass in.
+		div //becomes a display panel
+		div //becomes a display panel
+		div //becomes a display panel
+
 Once you've created a display, you need a theme for it so it actually renders. There are a selection of themes available or you can create your own. Currently, available themes are based around being responsive to display height and width so a height and width __MUST__ be set for your display.
 
 ## API
@@ -54,7 +61,7 @@ There are also extensions available for display. They all have demos and instruc
 ##Example Usage
 
 * [form](http://jsfiddle.net/bMEZR/): An example of a form being presented with display.
-* [video gallery](http://jsfiddle.net/vCdc3/4/): An example video gallery of some funny dance lessons.
+* [video gallery](http://jsfiddle.net/vCdc3/5/): An example video gallery of some funny dance lessons.
 
 ##Contributing
 
