@@ -45,8 +45,8 @@ There are some themes available already for display. They all have demos and ins
 
 * [side-slide](https://github.com/jh3y/display-side-slide.theme): side sliding theme.
 * [top-slide](https://github.com/jh3y/display-top-slide.theme): top sliding theme.
-* [carousel](https://github.com/jh3y/display-carousel.theme): carousel theme.
-* [vertical-carousel](https://github.com/jh3y/vertical-carousel.theme): vertical version of the carousel theme.
+* [merry-go-round](https://github.com/jh3y/display-merry-go-round.theme): carousel theme.
+* [vertical-carousel](https://github.com/jh3y/vertical-merry-go-round.theme): vertical version of the carousel theme.
 * [scaled-gallery](https://github.com/jh3y/display-scaled-gallery.theme): scaling gallery style theme.
 * [scaled-gallery-less](https://github.com/jh3y/display-scaled-gallery-less.theme): reduced version of the scaling gallery style theme.
 * [bridge](https://github.com/jh3y/display-bridge.theme): rotating style theme that looks like a bridge.
