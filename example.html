@@ -3,7 +3,6 @@
 <head>
 	<title>display</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="build/build.css">
 	<link rel="stylesheet" href="demo.css">
 	<script src="build/build.js"></script>
 </head>
@@ -13,32 +12,21 @@
 
 		<div class="content">
 			<div class="wrap">
-				<div id="display" class="display side-slide">
-					<div>
-						<h4>hi there!</h4>
-
-						<p>I'm a display and you can use me to display content in your project. Anything from images, to forms or any other sort of media you can think of.</p>
+				<div id="display" class="display carousel">
+					<div style="background-color: red;">
+						<h4>One</h4>
 					</div>
-					<div>
-						<h4>I've got a form field</h4>
-
-						<div>Why not use me to display a form to a user?</div>
-						<label>your name.</label>
-						<input type="text"></input>
+					<div style="background-color: green;">
+						<h4>Two</h4>
 					</div>
-					<div>
-						<h4>well now i've got an image.</h4>
-
-						<div>Now I've got an image. You could use me for a slideshow if you wanted.</div>
-						<img src="http://cdn.morguefile.com/imageData/public/files/p/pippalou/08/l/1375557203yvavx.jpg"></img>
+					<div style="background-color: grey;">
+						<h4>Three</h4>
 					</div>
-					<div>
-						<h4>why not show a video</h4>
-						<iframe width="210" height="158" src="//www.youtube.com/embed/Pybpb089oDY" frameborder="0" allowfullscreen></iframe>
+					<div style="background-color: purple;">
+						<h4>Four</h4>
 					</div>
-					<div>
-						<h4>so that's me.</h4>
-						<p>so now you have an idea of what I can do so why not give me a try or contribute at my page. <a href="https://github.com/jh3y/display">github.com/jh3y/display</a></p>
+					<div style="background-color: blue;">
+						<h4>Five</h4>
 					</div>
 				</div>
 			</div>
@@ -51,7 +39,13 @@
 		var element = document.querySelector('#display');
 		element.style.height = '200px';
 		element.style.width = '400px';
-		var myDisplay = new display(element);
+		var myDisplay = new display(element, {
+			'nav': true,
+			'pagination': true,
+			'infinite': true
+			// 'autoPlay': true,
+			// 'autoPlayDuration': 1000
+		});
 		document.querySelector('.next').addEventListener('click', function () {
 			myDisplay.next();
 		});
